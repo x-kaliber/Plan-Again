@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 7}
-  m_MinSize: {x: 875, y: 492}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 442}
   m_MaxSize: {x: 12002, y: 8042}
   vertical: 1
-  controlID: 106
+  controlID: 102
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -72,7 +72,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 442}
   m_MaxSize: {x: 12002, y: 8042}
   vertical: 0
-  controlID: 107
+  controlID: 103
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -246,7 +246,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 442}
   m_MaxSize: {x: 8002, y: 8042}
   vertical: 1
-  controlID: 108
+  controlID: 104
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 109
+  controlID: 105
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -554,20 +554,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Tile Palettes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 53
   m_LastFolders:
-  - Assets/Tile Palettes
+  - Assets/Scripts
   m_LastFoldersGridSize: 53
   m_LastProjectPath: C:\Users\tobul\OneDrive\Documents\Projects\Plan-Again\Plan Again
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 04470000
-    m_LastClickedID: 18180
-    m_ExpandedIDs: 00000000d6380000d8380000de380000e038000000ca9a3b
+    m_SelectedIDs: 644a0000
+    m_LastClickedID: 19044
+    m_ExpandedIDs: 000000002e4a0000304a0000324a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -595,7 +595,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d6380000d8380000
+    m_ExpandedIDs: 000000002e4a0000304a0000324a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -620,8 +620,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 6874feff
-    m_LastClickedInstanceID: -101272
+    m_SelectedInstanceIDs: be380000
+    m_LastClickedInstanceID: 14526
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000f43100002c320000222f0000b63c0000923000005a2f00004832000056340000663400004e340000b6300000ee2e0000000000006a3000004a310000b03b0000
     m_RenameOverlay:
@@ -647,7 +647,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 840}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 53
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 115
@@ -718,9 +718,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 6874feff
-      m_LastClickedID: -101272
-      m_ExpandedIDs: fc46ffff44f5ffff6afbffff9a380000
+      m_SelectedIDs: 9a380000
+      m_LastClickedID: 14490
+      m_ExpandedIDs: 6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -780,9 +780,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.7374787, y: 1.7358533, z: -150.14333}
+    m_Target: {x: 0.93976027, y: 3.1407607, z: -244.42773}
     speed: 2
-    m_Value: {x: 7.916729, y: 1.9857942, z: -150.04332}
+    m_Value: {x: 0.93976027, y: 3.1407607, z: -244.42773}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -832,9 +832,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 26.521523
+    m_Target: 16.335836
     speed: 2
-    m_Value: 27.771227
+    m_Value: 15.63238
   m_Ortho:
     m_Target: 1
     speed: 2
