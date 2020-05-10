@@ -3,8 +3,16 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
+public enum PlayerState
+{
+    walk,
+    attack,
+    interact
+}
+
 public class PlayerMovement : MonoBehaviour
 {
+    public PlayerState currentState;
     public float speed;
     private Rigidbody2D MyRigidBody;
     private Vector3 Change;
@@ -23,7 +31,24 @@ public class PlayerMovement : MonoBehaviour
         Change = Vector3.zero;
         Change.x = Input.GetAxisRaw("Horizontal");
         Change.y = Input.GetAxisRaw("Vertical");
-        UpdateAnimationAndMove();
+        if ( Input.GetButtonDown("attack") && currentState != PlayerState.attack) 
+        {
+            StartCoroutine(AttackCo());
+        }
+        else if (currentState == PlayerState.walk)
+        {
+            UpdateAnimationAndMove();
+        }
+    }
+
+    private IEnumerator AttackCo()
+    {
+        animator.SetBool("Attacking", true);
+        currentState = PlayerState.attack;
+        yield return null;
+        animator.SetBool("Attacking", false);
+        yield return new WaitForSeconds(.3f);
+        currentState = PlayerState.walk;
     }
 
     void UpdateAnimationAndMove()
