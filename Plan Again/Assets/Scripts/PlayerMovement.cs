@@ -21,8 +21,11 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentState = PlayerState.walk;
         animator = GetComponent<Animator>();
         MyRigidBody = GetComponent<Rigidbody2D>();
+        animator.SetFloat("MoxeX", 0);
+        animator.SetFloat("MoveY", -1);
     }
 
     // Update is called once per frame
@@ -68,6 +71,7 @@ public class PlayerMovement : MonoBehaviour
 
     void MoveCharacter()
     {
+        Change.Normalize();
         MyRigidBody.MovePosition(
             transform.position + Change * speed * Time.deltaTime);
     }
