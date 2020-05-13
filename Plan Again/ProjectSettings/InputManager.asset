@@ -297,8 +297,8 @@ InputManager:
     m_Name: attack
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: e
-    positiveButton: 
+    negativeButton: 
+    positiveButton: space
     altNegativeButton: 
     altPositiveButton: joystick button 0
     gravity: 1000

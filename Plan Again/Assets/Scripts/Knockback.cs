@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public class Knockback : MonoBehaviour
@@ -14,8 +13,9 @@ public class Knockback : MonoBehaviour
     {
         if (other.gameObject.CompareTag("breakable") && this.gameObject.CompareTag("Player"))
         {
-            other.GetComponent<Pot>().Smash();
+           other.GetComponent<Pot>().Smash();
         }
+
         if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Player"))
         {
             Rigidbody2D hit = other.GetComponent<Rigidbody2D>();

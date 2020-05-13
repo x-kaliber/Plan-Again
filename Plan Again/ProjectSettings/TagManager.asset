@@ -6,6 +6,7 @@ TagManager:
   tags:
   - breakable
   - Enemy
+  - PlayerHit
   layers:
   - Default
   - TransparentFX
