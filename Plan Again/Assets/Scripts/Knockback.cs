@@ -11,25 +11,32 @@ public class Knockback : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("breakable") && this.gameObject.CompareTag("Player"))
         {
-            Rigidbody2D Enemy = other.GetComponent<Rigidbody2D>();
-            if(Enemy != null)
+            other.GetComponent<Pot>().Smash();
+        }
+        if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Player"))
+        {
+            Rigidbody2D hit = other.GetComponent<Rigidbody2D>();
+            if(hit != null)
             {
-                Vector2 difference = Enemy.transform.position - transform.position;
+                Vector2 difference = hit.transform.position - transform.position;
                 difference = difference.normalized * thrust;
-                Enemy.AddForce(difference, ForceMode2D.Impulse);
-                StartCoroutine(KnockCo(Enemy));
+                hit.AddForce(difference, ForceMode2D.Impulse);
+
+                if (other.gameObject.CompareTag("Enemy"))
+                {
+                    hit.GetComponent<Enemy>().currentState = EnemyState.stagger;
+                    other.GetComponent<Enemy>().Knock(hit, KnockTime);
+                }
+                if (other.gameObject.CompareTag("Player"))
+                {
+                    hit.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
+                    other.GetComponent<PlayerMovement>().Knock(KnockTime);
+                }
+
             }
         }
     }
 
-    private IEnumerator KnockCo(Rigidbody2D Enemy)
-    {
-        if(Enemy != null)
-        {
-            yield return new WaitForSeconds(KnockTime);
-            Enemy.velocity = Vector2.zero;
-        }
-    }
 }

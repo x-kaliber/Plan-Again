@@ -7,14 +7,16 @@ public enum PlayerState
 {
     walk,
     attack,
-    interact
+    interact,
+    stagger,
+    idle
 }
 
 public class PlayerMovement : MonoBehaviour
 {
     public PlayerState currentState;
     public float speed;
-    private Rigidbody2D MyRigidBody;
+    private Rigidbody2D myRigidbody;
     private Vector3 Change;
     private Animator animator;
 
@@ -23,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     {
         currentState = PlayerState.walk;
         animator = GetComponent<Animator>();
-        MyRigidBody = GetComponent<Rigidbody2D>();
+        myRigidbody = GetComponent<Rigidbody2D>();
         animator.SetFloat("MoxeX", 0);
         animator.SetFloat("MoveY", -1);
     }
@@ -34,11 +36,11 @@ public class PlayerMovement : MonoBehaviour
         Change = Vector3.zero;
         Change.x = Input.GetAxisRaw("Horizontal");
         Change.y = Input.GetAxisRaw("Vertical");
-        if ( Input.GetButtonDown("attack") && currentState != PlayerState.attack) 
+        if ( Input.GetButtonDown("attack") && currentState != PlayerState.attack && currentState != PlayerState.stagger)
         {
             StartCoroutine(AttackCo());
         }
-        else if (currentState == PlayerState.walk)
+        else if (currentState == PlayerState.walk || currentState == PlayerState.idle)
         {
             UpdateAnimationAndMove();
         }
@@ -72,7 +74,23 @@ public class PlayerMovement : MonoBehaviour
     void MoveCharacter()
     {
         Change.Normalize();
-        MyRigidBody.MovePosition(
-            transform.position + Change * speed * Time.deltaTime);
+        myRigidbody.MovePosition(transform.position + Change * speed * Time.deltaTime);
+    }
+
+    public void Knock(float KnockTime)
+    {
+        StartCoroutine(KnockCo(KnockTime));
+    }
+
+    private IEnumerator KnockCo(float KnockTime)
+    {
+        if (myRigidbody != null)
+        {
+            yield return new WaitForSeconds(KnockTime);
+            myRigidbody.velocity = Vector2.zero;
+            currentState = PlayerState.idle;
+            myRigidbody.velocity = Vector2.zero;
+
+        }
     }
 }

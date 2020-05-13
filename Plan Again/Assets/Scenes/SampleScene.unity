@@ -3509,7 +3509,7 @@ GameObject:
   - component: {fileID: 1217052748}
   m_Layer: 0
   m_Name: Right Hit Box
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3568,9 +3568,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1217052745}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d7c55a4a2cf444fad2e10ecc50bb5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f4604069a66b444681588110041c293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thrust: 4
+  KnockTime: 0.2
 --- !u!1 &1217546149
 GameObject:
   m_ObjectHideFlags: 0
@@ -3586,6 +3588,7 @@ GameObject:
   - component: {fileID: 1217546151}
   - component: {fileID: 1217546150}
   - component: {fileID: 1217546156}
+  - component: {fileID: 1217546157}
   m_Layer: 0
   m_Name: Scientist
   m_TagString: Player
@@ -3751,11 +3754,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 1217546149}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f4604069a66b444681588110041c293, type: 3}
+  m_Script: {fileID: 11500000, guid: a7d7c55a4a2cf444fad2e10ecc50bb5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrust: 4
-  KnockTime: 0.3
+--- !u!61 &1217546157
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217546149}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.000000029802322, y: -0.16220754}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5626839, y: 0.9831685}
+  m_EdgeRadius: 0
 --- !u!1 &1265365923
 GameObject:
   m_ObjectHideFlags: 0
@@ -17890,7 +17917,7 @@ GameObject:
   - component: {fileID: 1586408908}
   m_Layer: 0
   m_Name: Left Hit Box
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17949,9 +17976,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1586408905}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d7c55a4a2cf444fad2e10ecc50bb5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f4604069a66b444681588110041c293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thrust: 4
+  KnockTime: 0.2
 --- !u!1 &1673599089
 GameObject:
   m_ObjectHideFlags: 0
@@ -18031,7 +18060,7 @@ GameObject:
   - component: {fileID: 1722412226}
   m_Layer: 0
   m_Name: Down Hit Box
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18089,9 +18118,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1722412223}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d7c55a4a2cf444fad2e10ecc50bb5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f4604069a66b444681588110041c293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thrust: 4
+  KnockTime: 0.2
 --- !u!1 &1728825044
 GameObject:
   m_ObjectHideFlags: 0
@@ -18263,7 +18294,7 @@ GameObject:
   - component: {fileID: 1917862497}
   m_Layer: 0
   m_Name: Up Hit Box
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18322,9 +18353,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1917862494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7d7c55a4a2cf444fad2e10ecc50bb5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f4604069a66b444681588110041c293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thrust: 4
+  KnockTime: 0.2
 --- !u!1001 &2060701396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18408,6 +18441,8 @@ GameObject:
   - component: {fileID: 2110451554}
   - component: {fileID: 2110451555}
   - component: {fileID: 2110451556}
+  - component: {fileID: 2110451557}
+  - component: {fileID: 2110451558}
   m_Layer: 0
   m_Name: log
   m_TagString: Enemy
@@ -18533,7 +18568,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0074629784, y: -0.53508735}
+  m_Offset: {x: -0.012326479, y: -0.62506425}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -18544,7 +18579,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.174571, y: 0.75964403}
+  m_Size: {x: 0.80493593, y: 0.45323634}
   m_EdgeRadius: 0
 --- !u!114 &2110451556
 MonoBehaviour:
@@ -18558,6 +18593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 650c7e4d96bb3a342ba2b830d275f725, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: 0
   Health: 2
   BaseAttack: 1
   EnemyName: Bobo The Tree Shaman
@@ -18566,6 +18602,47 @@ MonoBehaviour:
   HomePosition: {fileID: 0}
   ChaseRadius: 4
   AttackRadius: 1.2
+  anim: {fileID: 0}
+--- !u!61 &2110451557
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110451550}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.019454002, y: -0.21643102}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.92027664, y: 1.4212296}
+  m_EdgeRadius: 0
+--- !u!114 &2110451558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110451550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f4604069a66b444681588110041c293, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrust: 4
+  KnockTime: 0.2
 --- !u!1 &2138876820
 GameObject:
   m_ObjectHideFlags: 0
