@@ -1,21 +1,15 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - CameraMovement
     - FloatValue
-    - HeartManager
     - Knockback
-    - Log
-    - PlayerHit
     - PlayerMovement
-    - Pot
-    - Sign
     - Signal
-    - SignalListener
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -29,25 +23,15 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-    UnityEngine.UI.dll:
-    - UnityEngine.EventSystems.EventSystem
-    - UnityEngine.EventSystems.StandaloneInputModule
-    - UnityEngine.UI.CanvasScaler
-    - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.HorizontalLayoutGroup
-    - UnityEngine.UI.Image
-    - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/HouseInterior.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -83,44 +67,14 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 586}
     - Class: 114
-      Script: {instanceID: 11172}
-    - Class: 114
       Script: {instanceID: 11328}
     - Class: 114
-      Script: {instanceID: 11460}
-    - Class: 114
-      Script: {instanceID: 11514}
-    - Class: 114
-      Script: {instanceID: 11754}
-    - Class: 114
       Script: {instanceID: 11836}
-    - Class: 114
-      Script: {instanceID: 12106}
-    - Class: 114
-      Script: {instanceID: 12180}
     - Class: 114
       Script: {instanceID: 12280}
     - Class: 114
       Script: {instanceID: 12402}
-    - Class: 114
-      Script: {instanceID: 13224}
-    - Class: 114
-      Script: {instanceID: 13250}
-    - Class: 114
-      Script: {instanceID: 13388}
-    - Class: 114
-      Script: {instanceID: 13644}
-    - Class: 114
-      Script: {instanceID: 13702}
-    - Class: 114
-      Script: {instanceID: 13724}
-    - Class: 114
-      Script: {instanceID: 13840}
-    - Class: 114
-      Script: {instanceID: 14260}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -129,12 +83,6 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
       Script: {instanceID: 0}
     - Class: 19719996
       Script: {instanceID: 0}
@@ -695,6 +643,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 5
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/HouseInterior.unity
   playerPath: C:/Users/tobul/OneDrive/Documents/Projects/Plan-Again/Plan Again/Builds/Plan
     Again.exe
