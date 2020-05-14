@@ -5219,6 +5219,23 @@ PrefabInstance:
       propertyPath: playerPosition.y
       value: 4.7
       objectReference: {fileID: 0}
+    - target: {fileID: 6610443095702009185, guid: 8fd08505a74bf88448acda6eb2145ce3,
+        type: 3}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 487303448410253733, guid: 2931ebb2196eb9b4e8575db91e5608cc,
+        type: 3}
+    - target: {fileID: 6610443095702009185, guid: 8fd08505a74bf88448acda6eb2145ce3,
+        type: 3}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 7242018894602936031, guid: f1130d90c7e1aaa4f9015f440f22f2c9,
+        type: 3}
+    - target: {fileID: 6610443095702009185, guid: 8fd08505a74bf88448acda6eb2145ce3,
+        type: 3}
+      propertyPath: fadeWait
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 6953780087827247624, guid: 8fd08505a74bf88448acda6eb2145ce3,
         type: 3}
       propertyPath: m_LocalPosition.x
