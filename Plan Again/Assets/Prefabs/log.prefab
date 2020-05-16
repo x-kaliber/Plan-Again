@@ -172,6 +172,9 @@ MonoBehaviour:
   BaseAttack: 1
   EnemyName: Bobo The Tree Shaman
   MoveSpeed: 2
+  deathEffect: {fileID: 9118269310895594220, guid: 4cb51e01ea782e042b9925980c4dd1c9,
+    type: 3}
+  myRigidbody: {fileID: 0}
   target: {fileID: 0}
   HomePosition: {fileID: 0}
   ChaseRadius: 4

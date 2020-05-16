@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public enum EnemyState
@@ -18,6 +19,7 @@ public class Enemy : MonoBehaviour
     public int BaseAttack;
     public string EnemyName;
     public float MoveSpeed;
+    public GameObject deathEffect;
 
     private void Awake()
     {
@@ -29,7 +31,17 @@ public class Enemy : MonoBehaviour
         Health -= damage;
         if(Health <= 0)
         {
+            DeathEffect();
             this.gameObject.SetActive(false);
+        }
+    }
+
+    private void DeathEffect()
+    {
+        if (deathEffect != null)
+        {
+            GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
         }
     }
 

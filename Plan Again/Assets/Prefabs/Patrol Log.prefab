@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6294013312702874881}
   - component: {fileID: 6294013312702874883}
   - component: {fileID: 6294013312702874882}
-  - component: {fileID: 6294013312702874885}
   - component: {fileID: 6294013312702874884}
   - component: {fileID: 6294013312702874887}
+  - component: {fileID: 5040677518409534634}
   m_Layer: 8
   m_Name: Patrol Log
   m_TagString: Enemy
@@ -154,29 +154,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.80493593, y: 0.45323634}
   m_EdgeRadius: 0
---- !u!114 &6294013312702874885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6294013312702874943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 650c7e4d96bb3a342ba2b830d275f725, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentState: 0
-  maxHealth: {fileID: 11400000, guid: 27eac3d859fddf74eaf4a1abbe60d5c1, type: 2}
-  Health: 0
-  BaseAttack: 1
-  EnemyName: Bobo The Tree Shaman
-  MoveSpeed: 2
-  target: {fileID: 0}
-  HomePosition: {fileID: 0}
-  ChaseRadius: 4
-  AttackRadius: 0.8
-  anim: {fileID: 0}
 --- !u!61 &6294013312702874884
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -218,3 +195,33 @@ MonoBehaviour:
   thrust: 4
   KnockTime: 0.2
   damage: 1
+--- !u!114 &5040677518409534634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6294013312702874943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94b52f5599a0edb48b7a16b268eb8742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  maxHealth: {fileID: 11400000, guid: 87d5c307c58625a47bd3fd3577dcce70, type: 2}
+  Health: 0
+  BaseAttack: 1
+  EnemyName: Troll the Partoll
+  MoveSpeed: 3
+  deathEffect: {fileID: 2923928323855670252, guid: 0eff5883267030e43bc2a7ba309054e6,
+    type: 3}
+  myRigidbody: {fileID: 0}
+  target: {fileID: 0}
+  HomePosition: {fileID: 0}
+  ChaseRadius: 3
+  AttackRadius: 0.8
+  anim: {fileID: 0}
+  path: []
+  currentPoint: 0
+  currentGoal: {fileID: 0}
+  roundingDistance: 0.3
