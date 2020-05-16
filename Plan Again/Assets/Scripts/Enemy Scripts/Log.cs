@@ -7,7 +7,6 @@ public class Log : Enemy
     public Rigidbody2D myRigidbody;
     [Header("Target Variables")]
     public Transform target;
-    public Transform HomePosition;
     public float ChaseRadius;
     public float AttackRadius;
 

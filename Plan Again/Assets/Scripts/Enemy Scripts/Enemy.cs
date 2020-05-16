@@ -22,6 +22,10 @@ public class Enemy : MonoBehaviour
     public int BaseAttack;
     public string EnemyName;
     public float MoveSpeed;
+    public Vector2 homePosition;
+
+    [Header("Death Signal")]
+    public Signal roomSignal;
 
     [Header("Death Effects")]
     public GameObject deathEffect;
@@ -32,12 +36,19 @@ public class Enemy : MonoBehaviour
         Health = maxHealth.initialValue;
     }
 
+    private void OnEnable()
+    {
+
+        transform.position = homePosition;
+    }
+
     private void TakeDamage(float damage)
     {
         Health -= damage;
         if(Health <= 0)
         {
             DeathEffect();
+            roomSignal.Raise();
             this.gameObject.SetActive(false);
         }
     }
