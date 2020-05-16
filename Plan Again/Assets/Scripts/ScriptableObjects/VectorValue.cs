@@ -5,7 +5,10 @@ using UnityEngine;
 [CreateAssetMenu]
 public class VectorValue : ScriptableObject, ISerializationCallbackReceiver
 {
+    [Header("Value running in Game")]
     public Vector2 initialValue;
+
+    [Header("Value by Default on Start")]
     public Vector2 defaultValue;
 
     public void OnAfterDeserialize() 

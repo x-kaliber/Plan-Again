@@ -13,13 +13,19 @@ public enum EnemyState
 
 public class Enemy : MonoBehaviour
 {
+    [Header("State Machine")]
     public EnemyState currentState;
+
+    [Header("Enemy Stats")]
     public FloatValue maxHealth;
     public float Health;
     public int BaseAttack;
     public string EnemyName;
     public float MoveSpeed;
+
+    [Header("Death Effects")]
     public GameObject deathEffect;
+    private float DeathEffectDelay = 1f;
 
     private void Awake()
     {
@@ -41,7 +47,7 @@ public class Enemy : MonoBehaviour
         if (deathEffect != null)
         {
             GameObject effect = Instantiate(deathEffect, transform.position, Quaternion.identity);
-            Destroy(effect, 1f);
+            Destroy(effect, DeathEffectDelay);
         }
     }
 
