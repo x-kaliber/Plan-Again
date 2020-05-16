@@ -43,7 +43,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 49395239fd05b1041ba8fccad05b3c98, type: 3}
-    totalSpriteSurfaceArea: 556141
+    totalSpriteSurfaceArea: 555785
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -412,11 +412,9 @@ SpriteAtlas:
   - {fileID: -2336223751096622429, guid: 63984255db377544491fcffec27c15d0, type: 3}
   - {fileID: 8531737542734488527, guid: 63984255db377544491fcffec27c15d0, type: 3}
   - {fileID: -9051748682659619041, guid: 63984255db377544491fcffec27c15d0, type: 3}
-  - {fileID: -2639854583086408205, guid: 63984255db377544491fcffec27c15d0, type: 3}
   - {fileID: 138822527552902627, guid: 63984255db377544491fcffec27c15d0, type: 3}
   - {fileID: 8694480088762194938, guid: 63984255db377544491fcffec27c15d0, type: 3}
   - {fileID: -6274607833073127828, guid: 63984255db377544491fcffec27c15d0, type: 3}
-  - {fileID: 4391973271103909417, guid: 63984255db377544491fcffec27c15d0, type: 3}
   - {fileID: -1766389781502433406, guid: 63984255db377544491fcffec27c15d0, type: 3}
   - {fileID: -8253891713049958405, guid: 63984255db377544491fcffec27c15d0, type: 3}
   - {fileID: 243028321930452633, guid: 63984255db377544491fcffec27c15d0, type: 3}
@@ -529,6 +527,8 @@ SpriteAtlas:
   - {fileID: 538826285080647454, guid: 63984255db377544491fcffec27c15d0, type: 3}
   - {fileID: 1107736971085435061, guid: 63984255db377544491fcffec27c15d0, type: 3}
   - {fileID: -377563455374678323, guid: 63984255db377544491fcffec27c15d0, type: 3}
+  - {fileID: -2639854583086408205, guid: 63984255db377544491fcffec27c15d0, type: 3}
+  - {fileID: 4391973271103909417, guid: 63984255db377544491fcffec27c15d0, type: 3}
   - {fileID: -1790513009360131488, guid: a3f4c268f0420ef408f1a32df45daccd, type: 3}
   - {fileID: 6796940128468367395, guid: a3f4c268f0420ef408f1a32df45daccd, type: 3}
   - {fileID: 7257679221847934946, guid: a3f4c268f0420ef408f1a32df45daccd, type: 3}
@@ -2140,11 +2140,9 @@ SpriteAtlas:
   - objects_51
   - objects_69
   - objects_86
-  - objects_98
   - objects_50
   - objects_66
   - objects_87
-  - objects_97
   - objects_57
   - objects_67
   - objects_80
@@ -2257,6 +2255,8 @@ SpriteAtlas:
   - objects_119
   - objects_109
   - objects_108
+  - Switch_Down
+  - Switch_Up
   - NPC_test_11
   - NPC_test_10
   - NPC_test_13

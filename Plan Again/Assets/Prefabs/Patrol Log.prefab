@@ -213,7 +213,7 @@ MonoBehaviour:
   BaseAttack: 1
   EnemyName: Troll the Partoll
   MoveSpeed: 3
-  deathEffect: {fileID: 2923928323855670252, guid: 0eff5883267030e43bc2a7ba309054e6,
+  deathEffect: {fileID: 9118269310895594220, guid: 4cb51e01ea782e042b9925980c4dd1c9,
     type: 3}
   myRigidbody: {fileID: 0}
   target: {fileID: 0}
