@@ -51,11 +51,11 @@ public class DungeonEnemyRoom : DungeonRoom
     {
         for(int i = 0; i< enemies.Length; i++)
         {
-            if (enemies[i].gameObject.activeInHierarchy && i < enemies.Length - 1)
+            if (enemies[i].gameObject.activeInHierarchy && i <= enemies.Length - 1)
             {
                 return;
             }
-            OpenDoors();
+            OpenDoors();//For some reason activates after killing/Deactivating 2 enemies
         }
 
     }

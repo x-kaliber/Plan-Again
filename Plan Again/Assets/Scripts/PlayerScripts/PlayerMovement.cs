@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
@@ -97,6 +98,8 @@ public class PlayerMovement : MonoBehaviour
         if (Change != Vector3.zero)
         {
             MoveCharacter();
+            Change.x = Mathf.Round(Change.x);
+            Change.y = Mathf.Round(Change.y);
             animator.SetFloat("MoveX", Change.x);
             animator.SetFloat("MoveY", Change.y);
             animator.SetBool("Moving", true);
