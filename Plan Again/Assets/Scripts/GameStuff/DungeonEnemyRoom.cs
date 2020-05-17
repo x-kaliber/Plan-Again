@@ -9,7 +9,7 @@ public class DungeonEnemyRoom : DungeonRoom
     // Start is called before the first frame update
     void Start()
     {
-        
+        OpenDoors();
     }
 
     public override void OnTriggerEnter2D(Collider2D other)
