@@ -11,20 +11,28 @@ public class CoinTextManager : MonoBehaviour
 
     public void UpdateCoinCount()
     {
-        if (playerInventory.Coins >= 1000)
+        if (playerInventory.Coins != null)
         {
-            if (playerInventory.Coins >= 1000000)
+
+            if (playerInventory.Coins >= 1000)
             {
-                coinDisplay.text = "" + Math.Round((playerInventory.Coins / 1000000),2) + " M";
+                if (playerInventory.Coins >= 1000000)
+                {
+                    coinDisplay.text = "" + Math.Round((playerInventory.Coins / 1000000), 2) + " M";
+                }
+                else
+                {
+                    coinDisplay.text = "" + Math.Round((playerInventory.Coins / 1000), 2) + " K";
+                }
             }
             else
             {
-              coinDisplay.text = "" + Math.Round((playerInventory.Coins / 1000),2) + " K";
+                coinDisplay.text = "" + playerInventory.Coins;
             }
         }
         else
         {
-            coinDisplay.text = "" + playerInventory.Coins ;
+            coinDisplay.text = "0" + playerInventory.Coins;
         }
     }
 }

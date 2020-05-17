@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pot : MonoBehaviour
 {
     private Animator anim;
+    public LootTable thisLootPot;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,20 @@ public class Pot : MonoBehaviour
     public void Smash()
     {
         anim.SetBool("Smash", true);
+        MakeLootPot();
         StartCoroutine(BreakCo()); 
+    }
+
+    private void MakeLootPot()
+    {
+        if (thisLootPot != null)
+        {
+            PowerUp current = thisLootPot.LootPowerUp();
+            if (current != null)
+            {
+                Instantiate(current.gameObject, transform.position, Quaternion.identity);
+            }
+        }
     }
 
     IEnumerator BreakCo()

@@ -23,7 +23,7 @@ public class Door : Interactable
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetButtonDown("attack"))
         {
             if (PlayerInRange && thisDoorType == DoorType.key)
             {
@@ -51,11 +51,11 @@ public class Door : Interactable
 
     public void Close()
     {
-        //turn off the door Sprite Renderer
+        //turn on the door Sprite Renderer
         doorSprite.enabled = true;
-        //set open to true
+        //set open to false
         open = false;
-        //turn off the door's box collider
+        //turn on the door's box collider
         physicsCollider.enabled = true;
     }
 
