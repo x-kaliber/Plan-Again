@@ -7,6 +7,7 @@ TagManager:
   - breakable
   - Enemy
   - PlayerHit
+  - Movable
   layers:
   - Default
   - TransparentFX

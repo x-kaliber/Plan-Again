@@ -16,6 +16,11 @@ public class Knockback : MonoBehaviour
            other.GetComponent<Pot>().Smash();
         }
 
+        if (other.gameObject.CompareTag("Movable") && this.gameObject.CompareTag("Player"))
+        {
+            other.GetComponent<MovableObject>().MoveWardrobe();
+        }
+
         if (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Player"))
         {
             Rigidbody2D hit = other.GetComponent<Rigidbody2D>();
