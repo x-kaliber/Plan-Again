@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - PlayerHit
   - Movable
+  - Food
   layers:
   - Default
   - TransparentFX
