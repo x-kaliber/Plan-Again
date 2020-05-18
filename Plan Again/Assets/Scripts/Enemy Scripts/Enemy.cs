@@ -32,6 +32,7 @@ public class Enemy : MonoBehaviour
     private float DeathEffectDelay = 1f;
     public LootTable thisLoot;
 
+
     private void Awake()
     {
         Health = maxHealth.initialValue;
@@ -68,8 +69,10 @@ public class Enemy : MonoBehaviour
             if(current != null)
             {
                 Instantiate(current.gameObject, transform.position, Quaternion.identity);
+ 
             }
         }
+        
     }
 
     private void DeathEffect()

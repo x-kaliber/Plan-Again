@@ -1491,12 +1491,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abadfd7566a015a48b64fbb40de92f98, type: 3}
---- !u!1 &164647679 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 761835441911488189, guid: f902243e70a3f21479ea8a4d572c67c8,
-    type: 3}
-  m_PrefabInstance: {fileID: 761835441799269442}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &189480632 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1490523700074664584, guid: abadfd7566a015a48b64fbb40de92f98,
@@ -1523,8 +1517,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerInRange: 0
   context: {fileID: 11400000, guid: e518f14263a8bcf49b0dac9a6673b856, type: 2}
-  dialogBox: {fileID: 164647679}
-  dialogText: {fileID: 1216571149}
+  dialogBox: {fileID: 761835441799269444}
+  dialogText: {fileID: 761835441799269443}
   dialog: Temporary Base
 --- !u!1 &229680942
 GameObject:
@@ -1892,8 +1886,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerInRange: 0
   context: {fileID: 11400000, guid: e518f14263a8bcf49b0dac9a6673b856, type: 2}
-  dialogBox: {fileID: 164647679}
-  dialogText: {fileID: 1216571149}
+  dialogBox: {fileID: 761835441799269444}
+  dialogText: {fileID: 761835441799269443}
   dialog: Come to Sell Any extra Artifacts you have. My clients will pay a good price.
 --- !u!4 &359042809 stripped
 Transform:
@@ -2447,7 +2441,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &519420033
 Animator:
@@ -2640,7 +2634,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Options
+  m_Text: Mute
 --- !u!222 &537481029
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2825,7 +2819,7 @@ Transform:
   - {fileID: 998708080}
   - {fileID: 15846342}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &824032712
 PrefabInstance:
@@ -2931,8 +2925,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerInRange: 0
   context: {fileID: 11400000, guid: e518f14263a8bcf49b0dac9a6673b856, type: 2}
-  dialogBox: {fileID: 164647679}
-  dialogText: {fileID: 1216571149}
+  dialogBox: {fileID: 761835441799269444}
+  dialogText: {fileID: 761835441799269443}
   dialog: Temporary House
 --- !u!4 &869397876 stripped
 Transform:
@@ -3061,8 +3055,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerInRange: 0
   context: {fileID: 11400000, guid: e518f14263a8bcf49b0dac9a6673b856, type: 2}
-  dialogBox: {fileID: 164647679}
-  dialogText: {fileID: 1216571149}
+  dialogBox: {fileID: 761835441799269444}
+  dialogText: {fileID: 761835441799269443}
   dialog: Restricted Access!!!.... Come Back When you Have the appropriate credentials.
 --- !u!4 &923750099 stripped
 Transform:
@@ -3083,7 +3077,7 @@ GameObject:
   - component: {fileID: 944582122}
   - component: {fileID: 944582121}
   m_Layer: 5
-  m_Name: Options
+  m_Name: Mute
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3152,8 +3146,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1097868508}
-        m_MethodName: Options
+      - m_Target: {fileID: 652777001737858704, guid: 54284eb0afc6d5042b79136ac2a5e84f,
+          type: 3}
+        m_MethodName: Mute
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3299,8 +3294,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerInRange: 0
   context: {fileID: 11400000, guid: e518f14263a8bcf49b0dac9a6673b856, type: 2}
-  dialogBox: {fileID: 164647679}
-  dialogText: {fileID: 1216571149}
+  dialogBox: {fileID: 761835441799269444}
+  dialogText: {fileID: 761835441799269443}
   dialog: The Area is riddled with Sinkholes.                                       
     STAY AWAY.
 --- !u!4 &971790943 stripped
@@ -4917,7 +4912,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1097868507
 RectTransform:
@@ -4952,7 +4947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausePanel: {fileID: 1694590189}
-  mainMenu: StartMenu
+  mainMenu: EndGame
 --- !u!1001 &1114465232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5260,18 +5255,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154729786}
   m_CullTransparentMesh: 0
---- !u!114 &1216571149 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 761835440851184463, guid: f902243e70a3f21479ea8a4d572c67c8,
-    type: 3}
-  m_PrefabInstance: {fileID: 761835441799269442}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1217546155 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2617207205070836413, guid: 8c6707bd73c947b43b3777ebbc285ac3,
@@ -19124,7 +19107,7 @@ PlayableDirector:
   - key: {fileID: -4299472497093607384, guid: 5638c7ea4f0d2804fbd6f55f668b4e42, type: 2}
     value: {fileID: 1720418596}
   - key: {fileID: 7088621517021130924, guid: 5638c7ea4f0d2804fbd6f55f668b4e42, type: 2}
-    value: {fileID: 164647679}
+    value: {fileID: 761835441799269444}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1436552432
@@ -19239,8 +19222,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerInRange: 0
   context: {fileID: 11400000, guid: e518f14263a8bcf49b0dac9a6673b856, type: 2}
-  dialogBox: {fileID: 164647679}
-  dialogText: {fileID: 1216571149}
+  dialogBox: {fileID: 761835441799269444}
+  dialogText: {fileID: 761835441799269443}
   dialog: Temporary Market
 --- !u!4 &1472472888 stripped
 Transform:
@@ -19424,8 +19407,8 @@ MonoBehaviour:
   isOpen: 0
   Looted: {fileID: 11400000, guid: dd284b15ec7c7104b8f20719ec0c797d, type: 2}
   raiseItem: {fileID: 11400000, guid: 00085170a2cab5b4db32516618e65922, type: 2}
-  dialogBox: {fileID: 164647679}
-  dialogText: {fileID: 1216571149}
+  dialogBox: {fileID: 761835441799269444}
+  dialogText: {fileID: 761835441799269443}
 --- !u!1 &1574266921
 GameObject:
   m_ObjectHideFlags: 0
@@ -55566,6 +55549,75 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &652777000299748162
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 652777001737858705, guid: 54284eb0afc6d5042b79136ac2a5e84f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.5886016
+      objectReference: {fileID: 0}
+    - target: {fileID: 652777001737858705, guid: 54284eb0afc6d5042b79136ac2a5e84f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.6917892
+      objectReference: {fileID: 0}
+    - target: {fileID: 652777001737858705, guid: 54284eb0afc6d5042b79136ac2a5e84f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.1435547
+      objectReference: {fileID: 0}
+    - target: {fileID: 652777001737858705, guid: 54284eb0afc6d5042b79136ac2a5e84f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 652777001737858705, guid: 54284eb0afc6d5042b79136ac2a5e84f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 652777001737858705, guid: 54284eb0afc6d5042b79136ac2a5e84f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 652777001737858705, guid: 54284eb0afc6d5042b79136ac2a5e84f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 652777001737858705, guid: 54284eb0afc6d5042b79136ac2a5e84f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 652777001737858705, guid: 54284eb0afc6d5042b79136ac2a5e84f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 652777001737858705, guid: 54284eb0afc6d5042b79136ac2a5e84f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 652777001737858705, guid: 54284eb0afc6d5042b79136ac2a5e84f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 652777001737858707, guid: 54284eb0afc6d5042b79136ac2a5e84f,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 54284eb0afc6d5042b79136ac2a5e84f, type: 3}
 --- !u!1001 &761835441799269442
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55691,8 +55743,44 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1421936541086542736, guid: f902243e70a3f21479ea8a4d572c67c8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1421936542180400738, guid: f902243e70a3f21479ea8a4d572c67c8,
+        type: 3}
+      propertyPath: m_Text
+      value: 'The new base is on the way. Only if i new what are those things that
+        scared the builders.
+
+        At least they left me this Chest and few pots.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1421936542658068411, guid: f902243e70a3f21479ea8a4d572c67c8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f902243e70a3f21479ea8a4d572c67c8, type: 3}
+--- !u!114 &761835441799269443 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1421936542180400738, guid: f902243e70a3f21479ea8a4d572c67c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 761835441799269442}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &761835441799269444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1421936541086542736, guid: f902243e70a3f21479ea8a4d572c67c8,
+    type: 3}
+  m_PrefabInstance: {fileID: 761835441799269442}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1490523699987311664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55888,12 +55976,12 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 164647679}
+      objectReference: {fileID: 761835441799269444}
     - target: {fileID: 840284757913190768, guid: 56294d0cd10300f4584ff6c23c463e39,
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 1216571149}
+      objectReference: {fileID: 761835441799269443}
     - target: {fileID: 840284757913190768, guid: 56294d0cd10300f4584ff6c23c463e39,
         type: 3}
       propertyPath: dialog
