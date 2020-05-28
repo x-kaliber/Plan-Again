@@ -11,7 +11,7 @@ public class CoinTextManager : MonoBehaviour
 
     public void UpdateCoinCount()
     {
-        if (playerInventory.Coins != null)
+        if (playerInventory.Coins != null || playerInventory.Coins != 0)
         {
 
             if (playerInventory.Coins >= 1000)
